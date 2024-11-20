@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
         {
             string textoTelegrama;
 
-            char tipoTelegrama = ' ';
+            char tipoTelegrama = 'o';
             int numPalabras = 0;
             double coste;
 
@@ -32,7 +32,8 @@ namespace WindowsFormsApp1
                 tipoTelegrama = 'u';
             }
             //Obtengo el número de palabras que forma el telegrama  
-            numPalabras = textoTelegrama.Length;
+            string[] palabras = textoTelegrama.Split(' '); //separa las palabras y las introduce en una estructura 
+            numPalabras = palabras.Length; //Obtiene la longitud de la estructura, que será el número de palabras.
 
             //Si el telegrama es ordinario 
             if (tipoTelegrama == 'o')
@@ -43,7 +44,7 @@ namespace WindowsFormsApp1
                 }
                 else
                 {
-                    coste = 0.5 * numPalabras;
+                    coste = 0.5 * (numPalabras - 10);
                 }
             }
             else
