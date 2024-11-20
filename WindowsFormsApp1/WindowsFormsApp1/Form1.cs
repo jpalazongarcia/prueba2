@@ -35,6 +35,9 @@ namespace WindowsFormsApp1
             {
                 tipoTelegrama = 'o';
             }
+            else {
+                tipoTelegrama = 'o';
+            }
             //Obtengo el número de palabras que forma el telegrama  
             string[] palabras = textoTelegrama.Split(' '); //separa las palabras y las introduce en una estructura 
             numPalabras = palabras.Length; //Obtiene la longitud de la estructura, que será el número de palabras.
