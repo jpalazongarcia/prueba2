@@ -28,13 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.txtTelegrama = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.chkUrgente = new System.Windows.Forms.CheckBox();
+            this.SuspendLayout();
+            // 
+            // txtTelegrama
+            // 
+            this.txtTelegrama.Location = new System.Drawing.Point(70, 38);
+            this.txtTelegrama.Multiline = true;
+            this.txtTelegrama.Name = "txtTelegrama";
+            this.txtTelegrama.Size = new System.Drawing.Size(649, 257);
+            this.txtTelegrama.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(597, 349);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Location = new System.Drawing.Point(174, 378);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(100, 22);
+            this.txtPrecio.TabIndex = 2;
+            // 
+            // chkUrgente
+            // 
+            this.chkUrgente.AutoSize = true;
+            this.chkUrgente.Location = new System.Drawing.Point(98, 324);
+            this.chkUrgente.Name = "chkUrgente";
+            this.chkUrgente.Size = new System.Drawing.Size(95, 20);
+            this.chkUrgente.TabIndex = 3;
+            this.chkUrgente.Text = "checkBox1";
+            this.chkUrgente.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.chkUrgente);
+            this.Controls.Add(this.txtPrecio);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtTelegrama);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox txtTelegrama;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.CheckBox chkUrgente;
     }
 }
 
