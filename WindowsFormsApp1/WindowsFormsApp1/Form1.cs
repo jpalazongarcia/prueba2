@@ -32,7 +32,7 @@ namespace WindowsFormsApp1
                 tipoTelegrama = 'u';
             }
             if (radioButton1.Checked)
-            {
+            {//comentario
                 tipoTelegrama = 'o';
             }
             else {
